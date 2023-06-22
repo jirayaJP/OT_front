@@ -3,6 +3,7 @@ import Head from "@/app/component/head";
 import Form from "@/app/otform/page";
 import Detail from "@/app/detail/page";
 import TableD from "@/app/component/table";
+import Sidebar from "./component/side";
 import Link from "next/link";
 import Router from "next/router";
 import { Fragment } from 'react'
@@ -23,8 +24,6 @@ export default function Example() {
   return (
     <><Head></Head>
     
-      <TableD></TableD>
-      
     </>
   )
 }
