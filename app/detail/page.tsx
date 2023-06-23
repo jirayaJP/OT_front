@@ -1,12 +1,19 @@
 "use client";
 import { PaperClipIcon } from '@heroicons/react/20/solid'
-import Head from "@/app/component/head";
-
+import Nav from "@/app/component/nav";
+import Side from '../component/side';
 export default function Detail() {
   return (
-    <><Head></Head>
-    <div className='bg-violet-200'>
-    <div className="mx-auto max-w-2xl items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-16 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+    <>
+    <Nav></Nav>
+    <div className="flex">
+    <Side></Side>
+    <div className="flex flex-col w-full px-4 py-5 bg-white rounded-lg shadow">
+        <div className="bg-violet-200 h-screen">
+          <div className="mx-auto max-w-2xl items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-16 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+            <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div className="inline-block min-w-full py-6 sm:px-6 lg:px-8">
+                <div className="overflow-hidden">
       
         <h2 className="text-4xl text-gray-900">Information</h2>
         <dl className="divide-y divide-violet-500">
@@ -65,7 +72,11 @@ export default function Detail() {
             </dd>
           </div>
         </dl>
-      
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
     </div></>
   )

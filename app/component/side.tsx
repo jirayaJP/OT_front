@@ -1,15 +1,12 @@
 "use client";
-import TableD from "@/app/component/table";
 import { useState } from "react";
 
-export default function Sidebar() {
+export default function Side() {
     const [open, setOpen] = useState(false);
     return (
-        <><div className="flex">
-            <div
-                className={` ${open ? "w-20" : "w-60 "} flex flex-col h-screen p-3 bg-gray-800 shadow duration-300`}>
+<div className={` ${open ? "w-20" : "w-60 "} flex flex-col h-screen p-3 bg-gray-800 shadow duration-300`}>
                 
-                <div className="space-y-3">
+                <div className="space-y-2">
                     <div className="flex items-center justify-between">
 
                         <button onClick={() => setOpen(!open)}>
@@ -59,7 +56,7 @@ export default function Sidebar() {
                     <ul className="pt-2 pb-4 space-y-1 text-sm">
                         <li className="rounded-sm">
                             <a
-                                href="#"
+                                href="/"
                                 className="flex items-center p-2 space-x-3 rounded-md"
                             >
                                 <svg
@@ -80,7 +77,7 @@ export default function Sidebar() {
                         </li>
                         <li className="rounded-sm">
                             <a
-                                href="#"
+                                href="/otform"
                                 className="flex items-center p-2 space-x-3 rounded-md"
                             >
                                 <svg
@@ -101,7 +98,7 @@ export default function Sidebar() {
                         </li>
                         <li className="rounded-sm">
                             <a
-                                href="#"
+                                href="/detail"
                                 className="flex items-center p-2 space-x-3 rounded-md"
                             >
                                 <svg
@@ -118,15 +115,12 @@ export default function Sidebar() {
                                         d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
                                 </svg>
                                 <span className="text-gray-100">
-                                    Logout
+                                    Info
                                 </span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <TableD></TableD>
-        </div>
-    </>
-    );
-}
+              )
+            }

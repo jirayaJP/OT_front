@@ -1,13 +1,23 @@
 "use client";
 import Link from 'next/link'
 import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
-import Head from "@/app/component/head";
+
+import Nav from "@/app/component/nav";
+import Side from '../component/side';
 
 export default function Form() {
   return (
-    <><Head></Head>
-    <div className='bg-violet-200'>
-    <div className="mx-auto  max-w-2xl  items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-16 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+    <>
+    <Nav></Nav>
+    <div className="flex">
+    <Side></Side>
+    <div className="flex flex-col w-full px-4 py-5 bg-white rounded-lg shadow">
+        <div className="bg-violet-200 h-screen">
+          <div className="mx-auto max-w-2xl items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-16 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+            <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div className="inline-block min-w-full py-6 sm:px-6 lg:px-8">
+                <div className="overflow-hidden">
+    
       <form>
 
         <div className=" border-gray-900/10 pb-12">
@@ -131,6 +141,12 @@ export default function Form() {
         </div>
       </form>
     </div>
-    </div></>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </>
   )
 }
