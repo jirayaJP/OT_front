@@ -1,11 +1,14 @@
 "use client";
-import Head from "@/app/component/head";
+import Nav from "@/app/component/nav";
+import Side from "./side";
 export default function TableD() {
     return (
-      
-      
-          <div className="w-full px-4 py-5 bg-white rounded-lg shadow">
-          <div className="bg-violet-200 h-screen">
+    <>
+    <Nav></Nav>
+    <div className="flex">
+    <Side></Side>
+      <div className="flex flex-col w-full px-4 py-5 bg-white rounded-lg shadow">
+        <div className="bg-violet-200 h-screen">
           <div className="mx-auto max-w-2xl items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-16 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
             <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
               <div className="inline-block min-w-full py-6 sm:px-6 lg:px-8">
@@ -65,7 +68,6 @@ export default function TableD() {
                         <td className="whitespace-nowrap px-6 py-4">1/1/1111</td>
                         <td className="whitespace-nowrap px-6 py-4">1000</td>
                       </tr>
-
                     </tbody>
                   </table>
                 </div>
@@ -73,7 +75,8 @@ export default function TableD() {
             </div>
           </div>
         </div>
-          </div>
+      </div>
+    </div></>
           
         
       
