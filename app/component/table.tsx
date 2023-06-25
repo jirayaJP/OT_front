@@ -1,84 +1,89 @@
 "use client";
 import Nav from "@/app/component/nav";
 import Side from "./side";
+ 
+const TABLE_HEAD = ["ชื่อ-นามสกุล", "รหัสพนักงาน", "Project", "งานที่ทำ", "ชั่วโมง", "วันที่", "เงิน"];
+const TABLE_ROWS = [
+  {
+    name: "John Michael",
+    employNum: "111111",
+    project: "PEA1",
+    job: "Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat.",
+    hours: "4",
+    date: "1/1/2023",
+    income: "1000",
+  },
+  {
+    name: "Jane Smith",
+    employNum: "000000",
+    project: "PEA2",
+    job: "Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat.",
+    hours: "4",
+    date: "1/2/2023",
+    income: "1500",
+  },
+  {
+    name: "Jane Smith",
+    employNum: "999999",
+    project: "PEA1",
+    job: "Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat.",
+    hours: "4",
+    date: "6/6/2023",
+    income: "1000",
+  },
+];
+
 export default function TableD() {
     return (
     <>
     <Nav></Nav>
     <div className="flex">
     <Side></Side>
-      <div className="flex flex-col w-full px-4 py-5 bg-white rounded-lg shadow">
-        <div className="bg-violet-200 h-screen">
-          <div className="mx-auto max-w-2xl items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-16 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
-            <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-              <div className="inline-block min-w-full py-6 sm:px-6 lg:px-8">
-                <div className="overflow-hidden">
-                  <table className=" bg-violet-100 min-w-full text-center text-sm font-medium">
-                    <thead className="border-b border-neutral-700 bg-purple-800 text-neutral-50 dark:border-neutral-600 ">
-                      <tr>
-                        <th scope="col" className="px-6 py-4">ชื่อ-นามสกุล</th>
-                        <th scope="col" className="px-6 py-4">รหัสพนักงาน</th>
-                        <th scope="col" className="px-6 py-4">Project</th>
-                        <th scope="col" className="px-6 py-4">งาน</th>
-                        <th scope="col" className="px-6 py-4">ชั่วโมง</th>
-                        <th scope="col" className="px-6 py-4">วันที่</th>
-                        <th scope="col" className="px-6 py-4">เงิน</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr className="border-b dark:border-neutral-500">
-                        <td className="whitespace-nowrap px-6 py-4"><a href="/detail">ABC DEF</a></td>
-                        <td className="whitespace-nowrap px-6 py-4">000000</td>
-                        <td className="whitespace-nowrap px-6 py-4">PEA1</td>
-                        <td className="whitespace-nowrap px-6 py-4">edit</td>
-                        <td className="whitespace-nowrap px-6 py-4">4</td>
-                        <td className="whitespace-nowrap px-6 py-4">1/1/1111</td>
-                        <td className="whitespace-nowrap px-6 py-4">1000</td>
-
-                      </tr>
-                      <tr
-                        className="border-b border-primary-200 bg-primary-100 text-neutral-800">
-                        <td className="whitespace-nowrap px-6 py-4"><a href="/detail">ABC DEF</a></td>
-                        <td className="whitespace-nowrap px-6 py-4">000000</td>
-                        <td className="whitespace-nowrap px-6 py-4">PEA1</td>
-                        <td className="whitespace-nowrap px-6 py-4">edit</td>
-                        <td className="whitespace-nowrap px-6 py-4">4</td>
-                        <td className="whitespace-nowrap px-6 py-4">1/1/1111</td>
-                        <td className="whitespace-nowrap px-6 py-4">1000</td>
-                      </tr>
-
-                      <tr
-                        className="border-b border-primary-200 bg-primary-100 text-neutral-800">
-                        <td className="whitespace-nowrap px-6 py-4"><a href="/detail">ABC DEF</a></td>
-                        <td className="whitespace-nowrap px-6 py-4">000000</td>
-                        <td className="whitespace-nowrap px-6 py-4">PEA1</td>
-                        <td className="whitespace-nowrap px-6 py-4">edit</td>
-                        <td className="whitespace-nowrap px-6 py-4">4</td>
-                        <td className="whitespace-nowrap px-6 py-4">1/1/1111</td>
-                        <td className="whitespace-nowrap px-6 py-4">1000</td>
-                      </tr>
-
-                      <tr
-                        className="border-b border-primary-200 bg-primary-100 text-neutral-800">
-                        <td className="whitespace-nowrap px-6 py-4"><a href="/detail">ABC DEF</a></td>
-                        <td className="whitespace-nowrap px-6 py-4">000000</td>
-                        <td className="whitespace-nowrap px-6 py-4">PEA1</td>
-                        <td className="whitespace-nowrap px-6 py-4">edit</td>
-                        <td className="whitespace-nowrap px-6 py-4">4</td>
-                        <td className="whitespace-nowrap px-6 py-4">1/1/1111</td>
-                        <td className="whitespace-nowrap px-6 py-4">1000</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
+      <div className="flex flex-col w-full h-screen px-4 py-5 bg-violet-200 rounded-lg shadow">
+      <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <h2 className="text-4xl text-gray-900 text-center">OT</h2>
+        <div className="inline-block min-w-full py-6 sm:px-6 lg:px-8">
+            <table className="table-fixed bg-violet-100 min-w-full text-center text-sm font-medium">
+            <thead>
+              <tr>
+                {TABLE_HEAD.map((head) => (
+                <th key={head} className="w-2 border-b bg-violet-300 border-violet-800 p-4">
+                  {head}
+                </th>
+                  ))}
+                </tr>
+            </thead>
+            <tbody>
+              {TABLE_ROWS.map(({ name, employNum, project, job, hours, date, income }) => (
+                <tr key={name} className="border-2 border-y-violet-400 hover:bg-violet-200">
+                  <td className="p-4">
+                    <a href="/detail">{name}</a>
+                    
+                  </td>
+                  <td className="p-4">
+                    {employNum}
+                  </td>
+                  <td className="p-4">
+                    {project}
+                  </td>
+                  <td className="p-4">
+                    {job}
+                  </td>
+                  <td className="p-4">
+                    {hours}
+                  </td>
+                  <td className="p-4"> 
+                    {date}
+                  </td>
+                  <td className="p-4">
+                    {income}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+            </table>
           </div>
         </div>
       </div>
-    </div></>
-          
-        
-      
-      
-    )}
+    </div></> 
+  )}
