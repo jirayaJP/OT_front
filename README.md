@@ -2,7 +2,7 @@
 
 This is landing page --> (https://drive.google.com/file/d/1-cHOvY5a6TSJyc00x7r151tFOcwOScRy/view?usp=drive_link)
 
-<img src="https://www.dropbox.com/s/xkqvbcjur3ajtp2/landing.jpg?dl=0" height="60" width="60" >
+<img src="https://www.dropbox.com/s/xkqvbcjur3ajtp2/landing.jpg" >
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
