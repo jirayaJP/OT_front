@@ -33,4 +33,5 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-![My Remote Image](https://drive.google.com/file/d/1-cHOvY5a6TSJyc00x7r151tFOcwOScRy/view?usp=drive_link)
+This My OT frontend template.
+This is landing page --> (https://drive.google.com/file/d/1-cHOvY5a6TSJyc00x7r151tFOcwOScRy/view?usp=drive_link)
