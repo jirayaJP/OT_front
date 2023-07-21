@@ -1,6 +1,6 @@
 "use client";
 import Nav from "@/app/component/nav";
-import Side from "./side";
+import Side from "../component/side";
  
 const TABLE_HEAD = ["ชื่อ-นามสกุล", "รหัสพนักงาน", "Project", "งานที่ทำ", "ชั่วโมง", "วันที่", "เงิน"];
 const TABLE_ROWS = [
