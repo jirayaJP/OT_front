@@ -26,6 +26,10 @@ export default function Detail() {
               <dd className="mt-1 text-m leading-6 text-gray-800 sm:col-span-2 sm:mt-0">PEA1</dd>
             </div>
             <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+              <dt className="text-m font-medium leading-6 text-gray-900">งาน</dt>
+              <dd className="mt-1 text-m leading-6 text-gray-800 sm:col-span-2 sm:mt-0">คำอธิบายงาน</dd>
+            </div>
+            <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
               <dt className="text-m font-medium leading-6 text-gray-900">ชั่วโมง</dt>
               <dd className="mt-1 text-m leading-6 text-gray-800 sm:col-span-2 sm:mt-0">4</dd>
             </div>
