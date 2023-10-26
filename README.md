@@ -1,10 +1,3 @@
-## This My OT frontend template.
-
-This is landing page --> https://drive.google.com/file/d/1-cHOvY5a6TSJyc00x7r151tFOcwOScRy/view?usp=drive_link
-
-This is form page --> https://drive.google.com/file/d/1P8AS0R3sA0Pf96hfs13zLY3k4HuOhqnx/view?usp=drive_link
-
-This is detail page --> https://drive.google.com/file/d/1C5CnTv3NrDQmJpCUHzYMMupniMXzMuaN/view?usp=drive_link
 
 -------------------------------------------------------------------------------------------------------------------------------
 
